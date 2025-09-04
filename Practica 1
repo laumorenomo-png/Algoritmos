@@ -1,0 +1,8 @@
+# cook your dish here
+def calculadora_pepito(M,N):
+    return f"{M+N} {M*N} {M**N}"
+T = int(input())
+for _ in range(T):
+    M,N =list(map(int,input().strip().split()))
+    resultado=calculadora_pepito(M,N)
+    print(resultado)
