@@ -1,0 +1,17 @@
+def busqueda(arr,target):
+    indice_min=-1
+    indice_max=-1
+    for j in range(len(arr)):
+        if(indice_min ==-1 and target==arr[j]):
+            indice_min = j 
+            indice_max = j
+        elif(indice_min > -1 and target ==arr[j]):
+            indice_max = j
+            
+    return f" {indice_min} {indice_max} "
+N = int(input())
+for _ in range(N):
+    arr=list(map(int,input().strip().split()))
+    target=int(input())
+    resultado=busqueda(arr,target)
+    print(resultado)
